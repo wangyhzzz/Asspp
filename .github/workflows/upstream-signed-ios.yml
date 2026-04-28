@@ -196,10 +196,9 @@ jobs:
         run: |
           set -euo pipefail
           for XCODE_APP in \
-            /Applications/Xcode_26.0.app \
+            /Applications/Xcode_26.0.0.app \
             /Applications/Xcode_16.4.app \
-            /Applications/Xcode_16.3.app \
-            /Applications/Xcode.app
+            /Applications/Xcode_16.3.app 
           do
             if [ -d "${XCODE_APP}" ]; then
               sudo xcode-select -s "${XCODE_APP}"
